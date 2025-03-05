@@ -6,13 +6,13 @@ Answer the following questions and provide the SQL queries used to find the answ
 
 SQL Queries:
 
-``SQL
+```SQL
 SELECT city, country, SUM(totalTransactionRevenue_usd) AS total_revenue
 FROM cleaned_all_sessions
 WHERE totalTransactionRevenue_usd > 0 
 GROUP BY city, country
 ORDER BY total_revenue DESC;
-``
+```
 
 Answer:
 
@@ -40,12 +40,12 @@ Zurich		Switzerland
 **Question 2: What is the average number of products ordered from visitors in each city and country?**
 
 
-``SQL
+```SQL
 SELECT city, country, AVG(productquantity) AS avg_ordered
 FROM cleaned_all_sessions
 GROUP BY city, country
 HAVING AVG(productquantity) > 0  
-ORDER BY avg_ordered DESC;``
+ORDER BY avg_ordered DESC;```
 
 Answer:
 
@@ -56,7 +56,7 @@ The average number of products ordered varied considerably across the top five l
 
 SQL Queries:
 
-``SQL
+```SQL
 SELECT 
     v2ProductName,
     v2ProductCategory, 
@@ -68,7 +68,7 @@ FROM cleaned_all_sessions
 WHERE totalTransactionRevenue_usd > 0
 GROUP BY v2ProductName, v2ProductCategory, city, country 
 ORDER BY city ASC, country ASC, total_revenue DESC; 
-``
+```
 
 Answer:
 
@@ -81,7 +81,7 @@ Popular categories are bags, apparel, electronics (thermostats/smoke detectors),
 
 SQL Queries:
 
-``SQL
+```SQL
 	
 SELECT DISTINCT ON (city, country) 
     v2ProductName, 
@@ -92,7 +92,7 @@ FROM cleaned_all_sessions
 WHERE totalTransactionRevenue_usd > 0 
 GROUP BY v2ProductName, city, country
 ORDER BY city, country, total_revenue DESC;
-``
+```
 
 Answer:
 
@@ -104,7 +104,7 @@ Atlanta has purchased an abundance of reusable shopping bags, which would lead m
 
 SQL Queries:
 
-``SQL
+```SQL
 SELECT
     city,
     country,
@@ -119,7 +119,7 @@ GROUP BY
 ORDER BY
     total_revenue_usd DESC;
 ;
-``
+```
 
 Answer:
 
