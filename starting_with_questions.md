@@ -6,12 +6,13 @@ Answer the following questions and provide the SQL queries used to find the answ
 
 SQL Queries:
 
+``SQL
 SELECT city, country, SUM(totalTransactionRevenue_usd) AS total_revenue
 FROM cleaned_all_sessions
-WHERE city IS NOT NULL 
-  AND totalTransactionRevenue_usd > 0 
+WHERE totalTransactionRevenue_usd > 0 
 GROUP BY city, country
 ORDER BY total_revenue DESC;
+``
 
 Answer:
 
@@ -39,17 +40,18 @@ Zurich		Switzerland
 **Question 2: What is the average number of products ordered from visitors in each city and country?**
 
 
-SQL Queries:
-
+``SQL
 SELECT city, country, AVG(productquantity) AS avg_ordered
 FROM cleaned_all_sessions
-WHERE city IS NOT NULL 
 GROUP BY city, country
 HAVING AVG(productquantity) > 0  
-ORDER BY avg_ordered DESC;
+ORDER BY avg_ordered DESC;``
 
 Answer:
 
+The average number of products ordered from visitors in each city and country is below:
+
+/var/folders/gc/twz74xw16ss5nsq90k3zs56c0000gn/T/TemporaryItems/NSIRD_screencaptureui_wS0iAn/Screenshot 2025-03-05 at 9.06.53 AM.png
 
 **Question 3: Is there any pattern in the types (product categories) of products ordered from visitors in each city and country?**
 
