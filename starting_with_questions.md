@@ -51,7 +51,7 @@ Answer:
 
 The average number of products ordered from visitors in each city and country is below:
 
-/var/folders/gc/twz74xw16ss5nsq90k3zs56c0000gn/T/TemporaryItems/NSIRD_screencaptureui_wS0iAn/Screenshot 2025-03-05 at 9.06.53 AM.png
+The top 
 
 **Question 3: Is there any pattern in the types (product categories) of products ordered from visitors in each city and country?**
 
