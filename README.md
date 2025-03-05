@@ -10,7 +10,7 @@ The primary goal of this project is to develop proficiency in data analysis by w
 **Step 4** Given how important it is to not alter original data, I decided to create a cleaned view with only the columns that I actually needed information from that I could base my queries off of. I then determined the required data types for fields that would have functions performed on them and altered null fields or those with missing information to suit my needs.  
 **Step 5**- Answered questions 1-5 using my cleaned view.  
 **Step 6**- Created my own questions that I had as I viewed and engaged with the data.  
-**Step 7**- Performed QA on my results to validate that my information was correct.
+**Step 7**- Performed QA on my results to validate that the cleaning steps performed as I had intended and understand more about my dataset that I was working with. 
 
 ## Results
 This data was able to tell me how a user got to a website (paid ad, direct typing into, organic search, or referral from another website), what they looked at, how long they look at it, where they were from, and what they purchased.
