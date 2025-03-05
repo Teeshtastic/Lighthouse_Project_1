@@ -9,7 +9,7 @@ The goal of this project is to be able to analyze a large dataset that included 
 **Step 3**- Generate an ERD and read the questions to determine which table the information that I'd need would be located; in this case all_sessions.  
 **Step 4** Given how important it is to not alter original data, I decided to create a cleaned view with only the columns that I actually needed information from that I could base my queries off of. I then determined the required data types for fields that would have functions performed on them and altered null fields or those with missing information to suit my needs.  
 **Step 5**- Answered questions 1-5 using my cleaned view.  
-**Step 6**- Created my own questions that I had as I viewed and engaged with the data. 
+**Step 6**- Created my own questions that I had as I viewed and engaged with the data.  
 **Step 7**- Performed QA on my results to validate that my information was correct.
 
 ## Results
