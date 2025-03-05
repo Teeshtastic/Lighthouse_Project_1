@@ -72,7 +72,7 @@ ORDER BY city ASC, country ASC, total_revenue DESC;
 
 Answer:
 
-Popular categories are bags, apparel, electronics (thermostats/smoke detectors), and home products writing instruments, drink ware). 
+Popular categories are bags, apparel, electronics (thermostats/smoke detectors), and home products writing instruments, drinkware). 
 
 
 
