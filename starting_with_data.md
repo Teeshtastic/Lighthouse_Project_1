@@ -20,7 +20,8 @@ GROUP BY
     channelGrouping
 ORDER BY
     country ASC,
-    percentage_of_country_revenue DESC;```
+    percentage_of_country_revenue DESC;
+```
 
 Answer: 
 
@@ -84,7 +85,8 @@ SELECT
     SUM(timeonsite) AS total_duration  
 FROM cleaned_all_sessions
 GROUP BY v2ProductName
-ORDER BY total_duration DESC;```
+ORDER BY total_duration DESC;
+```
 
 Answer:
 
