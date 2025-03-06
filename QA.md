@@ -47,7 +47,7 @@ I noticed that the sales report, products, and sales by sku tables all had a com
 
 ```SQL
 SELECT 	p.sku,
-		p.name,
+	p.name,
      	p.orderedquantity AS products_orderedquantity,
        	sbs.total_ordered AS Sales_by_sku_orderedquantity,
 		sr.total_ordered AS sales_report_orderedquantity
