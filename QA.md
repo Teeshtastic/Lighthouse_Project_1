@@ -50,7 +50,7 @@ SELECT 	p.sku,
 	p.name,
      	p.orderedquantity AS products_orderedquantity,
        	sbs.total_ordered AS Sales_by_sku_orderedquantity,
-		sr.total_ordered AS sales_report_orderedquantity
+	sr.total_ordered AS sales_report_orderedquantity
 FROM products p
 JOIN sales_by_sku sbs
 ON p.orderedquantity = sbs.total_ordered
