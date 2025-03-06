@@ -42,3 +42,16 @@ WHERE
     city = country
     AND city IN ('(not set)', 'not available in demo dataset');
 ```
+
+I noticed that in the sales_report table and the products table that both contained product sku or sku column names as well as ordered quantity and total_ordered so decided to make a query to check that this information matched and it does not so I really am unsure what the information means in these columns.
+
+```SQL
+
+SELECT 	products.sku,
+		products.name,
+     	products.orderedquantity,
+       	sales_report.total_ordered
+FROM products 
+JOIN sales_report 
+ON products.sku = sales_report.productsku
+```
