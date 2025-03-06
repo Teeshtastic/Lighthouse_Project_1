@@ -45,7 +45,8 @@ SELECT city, country, AVG(productquantity) AS avg_ordered
 FROM cleaned_all_sessions
 GROUP BY city, country
 HAVING AVG(productquantity) > 0  
-ORDER BY avg_ordered DESC;```
+ORDER BY avg_ordered DESC;
+```
 
 Answer:
 
