@@ -1,7 +1,7 @@
 As I spent time reviewing the all_sessions table, I found that certain questions naturally developed. I've decided to choose a few things that I found myself wondering as I worked with the data. 
 
 
-**Question 1: What percentage of sales are being generated through each channel of a visitor arriving at a website who make a purchase?**
+**Question 1: What percentage of sales are being generated through each channel of a visitor arriving at a website who makes a purchase?**
 
 SQL Queries:
 
@@ -73,7 +73,7 @@ ORDER BY city ASC, country ASC, total_revenue DESC;
 
 Answer:
 
-I did expect to see Canada and Switzerland, but there are also Henley's sold to customers in Sunnyvale, United States. It is of note that Henley's average $20 in Canada, but are $24-25 in Switzerland and the US.
+I did expect to see Canada and Switzerland, but there are also Henley's sold to customers in Sunnyvale, United States. It is of note that Henley's average $20 in Canada, but is $24-25 in Switzerland and the US.
 
 
 **Question 4: Which products generated the highest time on site from visitors?**

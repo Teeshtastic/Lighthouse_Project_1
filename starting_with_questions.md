@@ -123,7 +123,7 @@ ORDER BY
 
 Answer:
 
-Yes, we can summarize the impact of revenue generated for 21 locations that have revenue reported. Locations in the United States have seen the largest benefit in this data source. Locations outside of the United States include Israel, Australia, Canada, and Switzerland.
+Yes, we can summarize the impact of revenue generated for 21 locations that have revenue reported. Locations in the United States make up the largest amount of information in this data source. Locations outside of the United States include Israel, Australia, Canada, and Switzerland.
 
 
 
