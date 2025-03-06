@@ -43,15 +43,17 @@ WHERE
     AND city IN ('(not set)', 'not available in demo dataset');
 ```
 
-I noticed that in the sales_report table and the products table that both contained product sku or sku column names as well as ordered quantity and total_ordered so decided to make a query to check that this information matched and it does not so I really am unsure what the information means in these columns.
+I noticed that the sales report, products, and sales by sku tables all had a common key (sku) so decided to check if the values match for stock keeping units and they do!
 
 ```SQL
-
-SELECT 	products.sku,
-		products.name,
-     	products.orderedquantity,
-       	sales_report.total_ordered
-FROM products 
-JOIN sales_report 
-ON products.sku = sales_report.productsku
+SELECT 	p.sku,
+		p.name,
+     	p.orderedquantity AS products_orderedquantity,
+       	sbs.total_ordered AS Sales_by_sku_orderedquantity,
+		sr.total_ordered AS sales_report_orderedquantity
+FROM products p
+JOIN sales_by_sku sbs
+ON p.orderedquantity = sbs.total_ordered
+JOIN sales_report sr
+ON sbs.productsku = sr.productsku
 ```
