@@ -1,7 +1,7 @@
 # Final-Project-Transforming-and-Analyzing-Data-with-SQL
 
 ## Project/Goals
-The primary goal of this project is to develop proficiency in data analysis by working with a large dataset from five different CSV files. These files have significant inconsistencies, missing data, and formatting challenges. The project focuses on the tools and processes for data-driven decision-making: version control with GitHub, importing data into PostgreSQL, data cleaning and transformation, and the application of structured data views to make insights about the dataset.
+The primary goal of this project is to develop proficiency in data analysis by working with data from five different CSV files. These files have significant inconsistencies, missing data, and formatting challenges. The project focuses on the tools and processes for data-driven decision-making: version control with GitHub, importing data into PostgreSQL, data cleaning and transformation, and the application of structured data views to make insights about the dataset.
 
 ## Process
 **Step 1**- Import csv files into tables in PostgreSQL as text only fields with no keys or constraints. I've learned in a very slow fashion how important lowercase column names are when importing.  
